@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaibatsu Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zaibatsu</h1>
+        <form id="calculator">
+            <div class="section" data-price="1000"><label>Ahjulõhe:</label><input type="number" id="section1" placeholder="0" min="0"></div>
+            <div class="section" data-price="2000"><label>Austrid:</label><input type="number" id="section2" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Banaani smuuti:</label><input type="number" id="section3" placeholder="0" min="0"></div>
+            <div class="section" data-price="500"><label>Gaseeritud mineraalvesi:</label><input type="number" id="section4" placeholder="0" min="0"></div>
+            <div class="section" data-price="2000"><label>Kaheksajalg:</label><input type="number" id="section5" placeholder="0" min="0"></div>
+            <div class="section" data-price="2000"><label>Kalamari:</label><input type="number" id="section6" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Krevetid:</label><input type="number" id="section7" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Margarita:</label><input type="number" id="section8" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Mohito:</label><input type="number" id="section8" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Pina colada:</label><input type="number" id="section8" placeholder="0" min="0"></div>
+            <div class="section" data-price="5000"><label>Sushi box:</label><input type="number" id="section8" placeholder="0" min="0"></div>
+            <div class="section" data-price="1000"><label>Troopiline smuuti:</label><input type="number" id="section8" placeholder="0" min="0"></div>
+
+            <button type="button" onclick="calculateTotal()">Loe kokku</button>
+        </form>
+        <div id="total">Kokku: $0</div>
+        <input type="text" id="summary" style="text-align:center; width: 80%; font-size: 16px;" readonly>
+        <button id="copyButton">Copy</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
